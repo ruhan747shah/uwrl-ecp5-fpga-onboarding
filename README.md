@@ -58,3 +58,11 @@ gtkwave build/blink.vcd
 ```bash
 yosys -l build/synth.log -p 'read_verilog -sv rtl/top.sv; synth_ecp5 -top top -json build/top.json; check -assert; stat'
 ```
+
+## Evidence
+
+### Intentional Fail
+![Intentional fail](evidence/failscreenshot.png.png)
+
+### GTKWave
+![Waveform](evidence/wave.png.png)
